@@ -1,19 +1,39 @@
+<h3>Sistema de Venta de Entradas para el Recital</h3>
 
-La consigna del día de la fecha será diseñar y codificar un sistema de venta de entradas para el Recital 
-Un recital tendrá un nombre , una fecha , un lugar  y la [censored] de la [censored]). 
-Además de estas simpáticas características, ¿qué más puede tener un recital? ¡Pues entradas! Vamos a usar una colección que nos permita obtener de manera ágil 
-y rápida que asocie un tipo de entradas (es un String) con el stock de las entradas (no una cantidad sino las Entradas) mismas. Profundicemos en este aspecto.
-Una entrada tiene identificador único, un precio y si la entrada esta disponible o no. Dentro de la colección de entradas en el recital, las mismas no se deberían repetir. 
-Las entradas tendrán dos comportamientos: obtenerTipo() y obtenerPrecioTotal(). 
-Hay dos tipos de Entradas, Entrada Vip que contiene de un beneficio (un String) y su precio será el precio base definido en la Entrada más un 50% de su valor. 
-En cambio de la Entrada Normal nos interesará saber la zona (Campo, Platea, Codo). El precio no sufre modificaciones. 
-Volviendo entonces al Recital, recordemos que tenemos que almacenar las colecciones de entradas de manera rápida y ágil por tipo (“Vip” y “General”).
+<p>La consigna del día de hoy es diseñar y codificar un sistema de venta de entradas para un <strong>Recital</strong>. Un recital tendrá un <strong>nombre</strong>, una <strong>fecha</strong>, un <strong>lugar</strong> y la capacidad del evento.</p>
 
-🧐 ¿Qué podemos realizar en un recital?. Cargar las entradas, saber cuantas entradas por tipo hemos vendido, mostrar un listado de entradas disponibles, ver el total recaudado y
-lo más importante, vender una entrada.
+<p>Además de estas características, ¿qué más puede tener un recital? ¡Pues <strong>entradas</strong>! Vamos a usar una colección que nos permita obtener de manera ágil y rápida una asociación entre un <strong>tipo de entradas</strong> (es un String) y el <strong>stock</strong> de las entradas. Profundicemos en este aspecto.</p>
 
- El sistema de venta de Entradas funciona(rá) tan bien que se nos pedirá hacer lo mismo pero para un PartidoDeFutbol. 
- No nos da mayores presiones sobre características y demás pero sí que se podrán cargar y vender entradas, saber cuantas entradas por tipo hemos vendido, 
- mostrar listado de entradas disponibles y ver el total recaudado (sentido de Julia Alvarez  🕷️ encendido) 
+<p>Una entrada tiene un <strong>identificador único</strong>, un <strong>precio</strong> y un indicador de si está disponible o no. Dentro de la colección de entradas en el recital, las mismas no se deben repetir. Las entradas tendrán dos comportamientos:</p>
 
-👉 Implementar el toString() y equals() según corresponda.  Diseñar las clases correspondientes utilizando el paradigma de la POO. Implementar un main para probar todo el sistema.
+<ul>
+  <li><strong>obtenerTipo()</strong></li>
+  <li><strong>obtenerPrecioTotal()</strong></li>
+</ul>
+
+<p>Existen dos tipos de entradas:</p>
+<ul>
+  <li><strong>Entrada Vip</strong>: Tiene un beneficio (un String) y su precio será el precio base definido en la entrada más un 50% de su valor.</li>
+  <li><strong>Entrada Normal</strong>: Interesará saber la zona (Campo, Platea, Codo). El precio no sufre modificaciones.</li>
+</ul>
+
+<p>Volviendo al recital, debemos almacenar las colecciones de entradas de manera rápida y ágil por tipo (<em>“Vip”</em> y <em>“General”</em>).</p>
+
+<h4>Acciones posibles en un recital:</h4>
+<ul>
+  <li>Cargar las entradas</li>
+  <li>Saber cuántas entradas por tipo se han vendido</li>
+  <li>Mostrar un listado de entradas disponibles</li>
+  <li>Ver el total recaudado</li>
+  <li>Vender una entrada</li>
+</ul>
+
+<p>El sistema de venta de entradas funcionará tan bien que se nos pedirá hacer lo mismo pero para un <strong>PartidoDeFutbol</strong>. No se nos da mayor detalle sobre sus características, pero sí deberá permitir:</p>
+<ul>
+  <li>Cargar y vender entradas</li>
+  <li>Saber cuántas entradas por tipo se han vendido</li>
+  <li>Mostrar un listado de entradas disponibles</li>
+  <li>Ver el total recaudado</li>
+</ul>
+
+<p>👉 Implementar el método <strong>toString()</strong> y <strong>equals()</strong> según corresponda. Diseñar las clases correspondientes utilizando el paradigma de la <strong>POO</strong>. Implementar un <em>main</em> para probar todo el sistema.</p>
